@@ -1,21 +1,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
 Table of Contents
 
 BACKGROUND	1
@@ -42,28 +27,6 @@ Sl	Requirement
 3	Deposit
 4	Withdraw
 5	Balance Enquiry
-2.	List of Files supplied
-
-Sl	File Name	Description
-1.	Customer.class	Entity class for a Customer (Part of Bank API developed in Advanced Java Project)
-2.	Account.class	Entity class for an Account (Part of Bank API developed in Advanced Java Project)
-3.	CustomerDB.class	Data Store class for the Customer table (Part of Bank API developed in Advanced Java Project)
-4.	AccountDB.class	Data Store class for the Account table (Part of Bank API developed in Advanced Java Project)
-5.	TransactionDB.class	Data Store class for the Transaction table (Part of Bank API developed in Advanced Java Project)
-6.	Teller.class	Façade class for the Bank API (Part of Bank API developed in Advanced Java Project)
-7.	AddCustomer.html	Form with client side validations for adding a Customer (Developed in HJSX Project)
-8.	AddAccount.html	Form with client side validations for adding an Account (Developed in HJSX Project)
-9.	Deposit.html	Form with client side validations for depositing an amount (Developed in HJSX Project)
-10.	Withdraw.html	Form with client side validations for withdrawing an amount (Developed in HJSX Project)
-11.	BalanceEnquiry.html	Form with client side validations for balance enquiry (Developed in HJSX Project)
-3.	Design of the Web Application
-
- 
-
- 	Note: The entire back end, Bank API and Data Layer, is to be reused from Advanced Java and Database project
-
-
- 	Note: All HTML screens are to be reused from HTML/Javascript/XML project
 
 Add a Customer
 This module is used to add a new customer.
@@ -119,16 +82,6 @@ Fields and Descriptions
 •	Only spaces not allowed
 •	Should have one ‘@’ character and one or more ‘.’
 
-Buttons and Description
-1.	Submit
-•	All validations are done only when this button is clicked
-•	The values entered by the user should be send to a JSP
-•	The JSP should validate these details and insert them into the Customer table
-•	On success, a success message should be displayed with the newly created Customer ID
-•	Appropriate messages should be displayed on failure
-2.	Reset
-•	All the fields should be cleared
-•	The form should be ready to accept another set of data
 4.	Add an Account
 This module is used to add a new Account. 
 
@@ -145,16 +98,6 @@ Fields and Descriptions
 •	Only numbers 
 •	Amount should be greater than 500 (Maximum of two decimal points are allowed)
 
-Buttons and Description
-1.	Submit
-•	All validations are done only when this button is clicked
-•	The values entered by the user should be send to a JSP
-•	The JSP should validate these details and insert them into the Account table
-•	On success, a success message should be displayed with the newly created Account Number
-•	Appropriate messages should be displayed on failure
-2.	Reset
-•	All the fields should be cleared
-•	The form should be ready to accept another set of data
 5.	Deposit 
 This module is used to deposit an amount in a particular account. 
 
@@ -170,17 +113,6 @@ Fields and Descriptions
 •	Amount should be greater than 0 (Maximum two decimal points are allowed)
 3.	Description
 
-
-Buttons and Description
-1.	Submit
-•	All validations are done only when this button is clicked
-•	The values entered by the user should be send to a JSP
-•	The JSP should validate these details and update the transaction table and account table
-•	On success, the balance amount should be displayed along with the success message
-•	Appropriate messages should be displayed on failure
-2.	Reset
-•	All the fields should be cleared
-•	The form should be ready to accept another set of data
 6.	Withdraw
 This module is used to withdraw an amount from a particular account. 
 
@@ -195,16 +127,7 @@ Fields and Descriptions
 •	Only numbers 
 •	Amount should be greater than 0 (Maximum two decimal points are allowed)
 3.	Description 
-Buttons and Description
-1.	Submit
-•	All validations are done only when this button is clicked
-•	The values entered by the user should be send to a JSP
-•	The JSP should validate these details  
-•	On success, the balance amount should be displayed along with the success message
-•	Appropriate messages should be displayed on failure
-2.	Reset
-•	All the fields should be cleared
-•	The form should be ready to accept another set of data
+
 7.	Balance Enquiry
 This module is used to find the balance amount of a particular account number. 
 
@@ -214,14 +137,3 @@ Fields and Descriptions
 •	Only numbers
 •	Should not be blank
 •	Maximum of 10 characters
-
-Buttons and Description
-1.	Submit
-•	All validations are done only when this button is clicked
-•	The value entered by the user should be send to a JSP
-•	The JSP should validate the data and retrieve the balance amount
-•	Appropriate messages should be displayed on success and failure
-2.	Reset
-•	All the fields should be cleared
-•	The form should be ready to accept another set of data
-
